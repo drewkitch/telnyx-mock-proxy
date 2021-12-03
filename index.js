@@ -29,18 +29,3 @@ app.use('', proxyMiddleware);
 app.listen(PORT, HOST, () => {
     console.log(`Starting Proxy at ${HOST}:${PORT}`);
  });
-
-
-// var httpProxy = require('http-proxy');
-// var proxy = httpProxy.createServer({
-//     target: {
-//       host: 'localhost',
-//       port: 4010
-//     },
-//     prependPath
-//     // ssl: {
-//     //   key: fs.readFileSync('valid-ssl-key.pem', 'utf8'),
-//     //   cert: fs.readFileSync('valid-ssl-cert.pem', 'utf8')
-//     // }
-
-//   }).listen(12111);
